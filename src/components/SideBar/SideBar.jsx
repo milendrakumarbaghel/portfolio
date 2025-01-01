@@ -17,7 +17,8 @@ export const Sidebar = () => {
             <img
               src="/images/p2.png"
               alt="Profile"
-              className="w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] rounded-[15px] object-cover
+              className="w-[100px] h-[100px] lg:w-[150px] lg:h-[175px] rounded-[20px]
+              object-cover
               transition-all duration-300 hover:rounded-[5px]"
             />
           </div>
