@@ -10,7 +10,7 @@ export const Resume = () => {
 
       <div className="flex justify-center items-center h-[calc(100vh-200px)]">
         <motion.button
-          onClick={() => window.open('./assets/resume.pdf')}
+          onClick={() => window.open('/Resume.pdf')}
           className="group relative px-8 py-4 text-lg bg-[#2b2b2b] text-[#ffd700]
             rounded-xl overflow-hidden transition-all duration-300"
           whileHover={{ scale: 1.05 }}
