@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     title: 'Ride Booking App',
     category: 'Web Applications',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&q=80',
+    image: 'https://img.freepik.com/free-vector/taxi-app-interface-concept_23-2148494543.jpg?t=st=1742836996~exp=1742840596~hmac=2f13032a70497bc41b9e8a0a7f86e56747d2c1689edb85161bc3ff2afcef0785&w=2000',
   },
   // {
   //   id: 2,
@@ -34,9 +34,8 @@ export const Projects = () => {
           <button
             key={category}
             onClick={() => setFilter(category)}
-            className={`text-sm ${
-              filter === category ? 'text-[#ffd700]' : 'text-gray-400 hover:text-gray-300'
-            } transition-colors`}
+            className={`text-sm ${filter === category ? 'text-[#ffd700]' : 'text-gray-400 hover:text-gray-300'
+              } transition-colors`}
           >
             {category}
           </button>
@@ -56,7 +55,9 @@ const ProjectCard = ({ title, category, image }) => (
   <div className="group relative">
     <div className="relative h-48 rounded-xl overflow-hidden">
       <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-        <Eye className="text-white w-8 h-8" />
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+          <Eye className="text-white w-8 h-8" />
+        </a>
       </div>
       <img src={image} alt={title} className="w-full h-full object-cover" />
     </div>

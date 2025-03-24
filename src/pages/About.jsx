@@ -7,7 +7,7 @@ const services = [
   {
     icon: Monitor,
     title: "Web Development",
-    description: "High-quality development of sites at the professional level."
+    description: "High-quality development of web applications."
   },
   // {
   //   icon: Smartphone,
