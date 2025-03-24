@@ -55,7 +55,7 @@ const ProjectCard = ({ title, category, image }) => (
   <div className="group relative">
     <div className="relative h-48 rounded-xl overflow-hidden">
       <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+        <a href="uber-project-red.vercel.app" target="_blank" rel="noopener noreferrer">
           <Eye className="text-white w-8 h-8" />
         </a>
       </div>
