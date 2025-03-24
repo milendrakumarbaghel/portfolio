@@ -1,6 +1,7 @@
 import { PageTitle } from '../components/Layout/PageTitle';
 import { ServiceCard } from '../components/Cards/ServiceCard';
-import { Monitor, Smartphone, Gamepad } from 'lucide-react';
+import { Monitor } from 'lucide-react';
+// import { Monitor, Smartphone, Gamepad } from 'lucide-react';
 
 const services = [
   {
@@ -8,16 +9,16 @@ const services = [
     title: "Web Development",
     description: "High-quality development of sites at the professional level."
   },
-  {
-    icon: Smartphone,
-    title: "Mobile Apps",
-    description: "Professional development of applications for iOS and Android."
-  },
-  {
-    icon: Gamepad,
-    title: "Gaming",
-    description: "I used to play Battle Royal PC and Mobile Games."
-  }
+  // {
+  //   icon: Smartphone,
+  //   title: "Mobile Apps",
+  //   description: "Professional development of applications for iOS and Android."
+  // },
+  // {
+  //   icon: Gamepad,
+  //   title: "Gaming",
+  //   description: "I used to play Battle Royal PC and Mobile Games."
+  // }
 ];
 
 export const About = () => {
