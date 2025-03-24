@@ -30,7 +30,7 @@ export const Projects = () => {
       </h2>
 
       <div className="flex gap-6 mb-8">
-        {['All', 'Web Applications', 'Mobile Applications'].map((category) => (
+        {['All', 'Web Applications'].map((category) => (
           <button
             key={category}
             onClick={() => setFilter(category)}
