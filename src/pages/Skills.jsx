@@ -74,13 +74,7 @@ export const Skills = () => {
   );
 };
 
-const SkillCard = ({ name, icon, level, index }) => {
-  const levelColors = {
-    'Advanced': 'from-green-500/20 to-emerald-500/20 text-green-400',
-    'Intermediate': 'from-yellow-500/20 to-orange-500/20 text-yellow-400',
-    'Beginner': 'from-blue-500/20 to-cyan-500/20 text-blue-400'
-  };
-
+const SkillCard = ({ name, icon, index }) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
@@ -116,18 +110,9 @@ const SkillCard = ({ name, icon, level, index }) => {
         </div>
 
         {/* Skill name */}
-        <h3 className="font-semibold transition-colors duration-300 group-hover:text-primary-300 text-base mb-2 relative z-10">
+        <h3 className="font-semibold transition-colors duration-300 group-hover:text-primary-300 text-base relative z-10">
           {name}
         </h3>
-
-        {/* Level badge */}
-        <div className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gradient-to-r ${levelColors[level]} border border-current/20`}>
-          <div className={`w-2 h-2 rounded-full mr-2 ${
-            level === 'Advanced' ? 'bg-green-400' :
-            level === 'Intermediate' ? 'bg-yellow-400' : 'bg-blue-400'
-          }`}></div>
-          {level}
-        </div>
 
         {/* Hover effect overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 to-accent-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>

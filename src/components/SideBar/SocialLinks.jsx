@@ -4,16 +4,16 @@ const socialLinks = [
   { icon: Github, href: 'https://github.com/milendrakumarbaghel', label: 'GitHub' },
   { icon: Twitter, href: 'https://x.com/milendrabaghel', label: 'Twitter' },
   { icon: Linkedin, href: 'https://www.linkedin.com/in/milendra-kumar-baghel/', label: 'LinkedIn' },
-  { icon: Instagram, href: 'https://instagram.com/milendra', label: 'Instagram' }
+  { icon: Instagram, href: 'https://instagram.com/milendrabaghel', label: 'Instagram' }
 ];
 
 export const SocialLinks = () => (
   <div className="flex gap-3 justify-center">
     {socialLinks.map(({ icon: Icon, href, label }) => (
-      <a 
-        key={href} 
-        href={href} 
-        target="_blank" 
+      <a
+        key={href}
+        href={href}
+        target="_blank"
         rel="noopener noreferrer"
         className="p-3 bg-primary-500/20 rounded-xl hover:bg-primary-500/30 transition-all duration-300 group"
         title={label}

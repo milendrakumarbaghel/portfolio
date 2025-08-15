@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
-import { GlassCard } from '../components/Cards/GlassCard';
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -43,28 +42,28 @@ export const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'milendra.kumar@example.com',
-      link: 'mailto:milendra.kumar@example.com'
+      value: 'baghelmilendrakumar@gmail.com',
+      link: 'mailto:baghelmilendrakumar@gmail.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+91 98765 43210',
-      link: 'tel:+919876543210'
+      value: '+91 8989828591',
+      link: 'tel:+918989828591'
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'Bhopal, Madhya Pradesh, India',
+      value: 'Seoni, Madhya Pradesh, India',
       link: '#'
     }
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/milendra', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/milendra', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com/milendra', label: 'Twitter' },
-    { icon: Instagram, href: 'https://instagram.com/milendra', label: 'Instagram' }
+    { icon: Github, href: 'https://github.com/milendrakumarbaghel', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/milendra-kumar-baghel', label: 'LinkedIn' },
+    { icon: Twitter, href: 'https://twitter.com/milendrabaghel', label: 'Twitter' },
+    { icon: Instagram, href: 'https://instagram.com/milendrabaghel', label: 'Instagram' }
   ];
 
   return (
@@ -91,7 +90,7 @@ export const Contact = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <h3 className="text-xl font-bold text-white mb-4">Get in Touch</h3>
-          
+
           <div className="space-y-4 mb-6">
             {contactInfo.map((info, index) => (
               <motion.a
@@ -143,7 +142,7 @@ export const Contact = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <h3 className="text-xl font-bold text-white mb-4">Send Message</h3>
-          
+
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Full Name */}
@@ -159,8 +158,8 @@ export const Contact = () => {
                   className="w-full bg-transparent text-white border border-white/20 rounded-xl px-4 py-3 focus:border-primary-500 focus-ring outline-none transition-all duration-300 text-sm"
                 />
                 <label className={`absolute left-4 transition-all duration-300 ${
-                  focused.fullname || formData.fullname 
-                    ? 'top-1 text-xs text-primary-400' 
+                  focused.fullname || formData.fullname
+                    ? 'top-1 text-xs text-primary-400'
                     : 'top-3 text-gray-400 text-sm'
                 }`}>
                   Full Name
@@ -180,8 +179,8 @@ export const Contact = () => {
                   className="w-full bg-transparent text-white border border-white/20 rounded-xl px-4 py-3 focus:border-primary-500 focus-ring outline-none transition-all duration-300 text-sm"
                 />
                 <label className={`absolute left-4 transition-all duration-300 ${
-                  focused.email || formData.email 
-                    ? 'top-1 text-xs text-primary-400' 
+                  focused.email || formData.email
+                    ? 'top-1 text-xs text-primary-400'
                     : 'top-3 text-gray-400 text-sm'
                 }`}>
                   Email Address
@@ -202,8 +201,8 @@ export const Contact = () => {
                 className="w-full bg-transparent text-white border border-white/20 rounded-xl px-4 py-3 focus:border-primary-500 focus-ring outline-none transition-all duration-300 text-sm"
               />
               <label className={`absolute left-4 transition-all duration-300 ${
-                focused.subject || formData.subject 
-                  ? 'top-1 text-xs text-primary-400' 
+                focused.subject || formData.subject
+                  ? 'top-1 text-xs text-primary-400'
                   : 'top-3 text-gray-400 text-sm'
               }`}>
                 Subject
@@ -223,8 +222,8 @@ export const Contact = () => {
                 className="w-full bg-transparent text-white border border-white/20 rounded-xl px-4 py-3 focus:border-primary-500 focus-ring outline-none resize-none transition-all duration-300 text-sm"
               />
               <label className={`absolute left-4 transition-all duration-300 ${
-                focused.message || formData.message 
-                  ? 'top-1 text-xs text-primary-400' 
+                focused.message || formData.message
+                  ? 'top-1 text-xs text-primary-400'
                   : 'top-3 text-gray-400 text-sm'
               }`}>
                 Your Message

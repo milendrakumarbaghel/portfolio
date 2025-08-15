@@ -10,8 +10,8 @@ export const ContactInfo = () => (
     />
     <ContactItem
       title="Phone"
-      content="+91 98765 43210"
-      href="tel:+919876543210"
+      content="+91 8989828591"
+      href="tel:+918989828591"
       icon={Phone}
     />
     <ContactItem
@@ -31,8 +31,8 @@ const ContactItem = ({ title, content, href, icon: Icon }) => {
       <div>
         <p className="text-gray-400 text-xs uppercase font-medium tracking-wider">{title}</p>
         {href ? (
-          <a 
-            href={href} 
+          <a
+            href={href}
             className="text-white text-sm hover:text-primary-300 transition-colors duration-300"
           >
             {content}
