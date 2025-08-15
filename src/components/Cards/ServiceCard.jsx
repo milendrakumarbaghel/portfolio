@@ -1,9 +1,15 @@
+import { GlassCard } from './GlassCard';
+
 export const ServiceCard = ({ icon: Icon, title, description }) => (
-    <div className="bg-gradient-to-br from-[#2b2b2b] to-[#1e1e1e] p-6 rounded-xl border border-[#2b2b2b]">
-      <div className="bg-[#2b2b2b] w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-        <div className="text-[#ffd700]"><Icon /></div>
-      </div>
-      <h4 className="text-white text-lg font-medium mb-2">{title}</h4>
-      <p className="text-gray-400 text-sm">{description}</p>
+  <GlassCard className="flex flex-col group" height="h-auto">
+    <div className="bg-primary-500/20 w-12 h-12 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary-500/30 transition-all duration-300">
+      <Icon className="w-6 h-6 text-primary-400" />
     </div>
-  );
+    <h4 className="text-lg font-semibold text-white mb-2 group-hover:text-primary-300 transition-colors duration-300">
+      {title}
+    </h4>
+    <p className="text-gray-400 text-sm leading-relaxed">
+      {description}
+    </p>
+  </GlassCard>
+);

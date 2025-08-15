@@ -1,5 +1,5 @@
 export const PageTitle = ({ children }) => (
-    <h2 className="text-3xl text-white font-semibold mb-8 pb-2 border-b-2 border-[#ffd700] w-fit">
-      {children}
-    </h2>
-  );
+  <h2 className="text-4xl md:text-5xl font-bold mb-8">
+    <span className="gradient-text">{children}</span>
+  </h2>
+);
