@@ -67,6 +67,11 @@
     border-radius: 6px;
   }
 
+  /* Sections and <main> receive focus programmatically after in-page jumps; no ring there. */
+  [tabindex='-1']:focus {
+    outline: none;
+  }
+
   h1, h2, h3, h4 {
     font-family: var(--font-display);
     letter-spacing: -0.02em;

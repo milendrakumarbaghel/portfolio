@@ -32,7 +32,7 @@ export const personal = {
     src: '/images/portrait-850.webp',
     srcSet: '/images/portrait-480.webp 480w, /images/portrait-850.webp 850w',
     width: 850,
-    height: 1000,
+    height: 850,
     alt: 'Portrait of Milendra Kumar Baghel',
   },
 } as const

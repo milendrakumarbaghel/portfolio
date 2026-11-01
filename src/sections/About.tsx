@@ -29,9 +29,8 @@ export function About() {
                     width={personal.portrait.width}
                     height={personal.portrait.height}
                     alt={personal.portrait.alt}
-                    className="aspect-[17/20] w-full object-cover saturate-[0.85]"
+                    className="aspect-[17/20] w-full object-cover object-[50%_35%] brightness-[0.94] contrast-[1.03]"
                   />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-950/70 via-transparent to-transparent" aria-hidden="true" />
                   <div className="pointer-events-none absolute inset-0 mix-blend-overlay [background:linear-gradient(135deg,rgb(136_104_255/0.35),transparent_50%,rgb(75_220_245/0.25))]" aria-hidden="true" />
                 </div>
                 <figcaption className="flex items-center justify-between px-2 pb-1 pt-3.5 font-mono text-[0.66rem] uppercase tracking-[0.14em] text-muted">
