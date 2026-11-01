@@ -1,0 +1,13 @@
+{
+  "name": "Milendra Kumar Baghel",
+  "short_name": "Milendra",
+  "description": "Software engineer, full-stack developer and freelance web developer.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#08090D",
+  "theme_color": "#08090D",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
